@@ -42,5 +42,6 @@ while True:
         if not find_word(user_word):
             print('Такого слова не существует у меня в словаре! Введите другое.')
             continue
+        used.append(user_word)
         if my_turn(user_word) is None:
             break
